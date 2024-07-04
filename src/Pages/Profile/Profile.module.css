@@ -49,12 +49,23 @@
 	justify-content: space-around;
 	gap: 2em;
 	padding: 1em;
+	margin-bottom: 5em;
 }
 .clients {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin-bottom: 5em;
+	gap: 2em;
 }
+.clients_img{
+	border: 1px solid red;
+	display: grid;
+	place-items: center;
+}
+.clients_img img{
+	height: 2em;
+}
+
 @keyframes ascend {
 	from {
 		margin-top: 5em;

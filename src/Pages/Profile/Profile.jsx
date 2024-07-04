@@ -7,7 +7,7 @@ import {
 	Footer,
 	Badge,
 	JobPosition,
-	clients,
+	//clients,
 	experienceList,
 } from "../../index";
 
@@ -43,15 +43,17 @@ const Profile = () => {
 					/>
 				)) }
 			</div>
-			<div className={ styles.profile_intro }>
+			{/* <div className={ styles.profile_intro }>
 				<Badge label='Clients' />
 				<h2>Who ive worked with</h2>
-			</div>
-			<div className={ styles.clients }>
+			</div> */}
+			{/* <div className={ styles.clients }>
 				{ clients.map((client, i) => (
-					<Image key={ i } src={ client } />
+					<div key={ i } className={ styles.clients_img }>
+						<Image src={ client } />
+						</div>
 				)) }
-			</div>
+			</div> */}
 			<h2 className='contact-heading'>
 				Lets work together.
 				<br />

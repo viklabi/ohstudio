@@ -1,0 +1,14 @@
+.no_page{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.no_page_content h1{
+  font-size: 5em;
+}
+.no_page p{
+  width: 600px;
+  font-size: 2em;
+}
