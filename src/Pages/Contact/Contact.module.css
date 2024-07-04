@@ -1,0 +1,16 @@
+.contact {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+.contact h1 {
+	margin: 0;
+}
+.contact footer {
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+}

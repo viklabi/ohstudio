@@ -1,0 +1,29 @@
+.shop {
+	background-color: #000;
+	display: flex;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 2em;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding: 11px 20px;
+	border-radius: 9999px;
+	animation: shop 0.5s linear;
+}
+.shop svg {
+	width: 0.8em;
+}
+.shop p {
+	color: #fff;
+	font-size: 0.9em;
+}
+@keyframes shop {
+	from {
+		bottom: 0;
+	}
+	to {
+		bottom: 2em;
+	}
+}

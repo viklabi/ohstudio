@@ -1,0 +1,32 @@
+.project {
+	border-radius: 12px;
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(10px);
+	border-radius: inherit;
+	display: none;
+}
+.project h3 {
+	color: #fff;
+	font-size: 1.2em;
+	opacity: 0;
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+.project h3:hover {
+	opacity: 1;
+}
+.project_img {
+	border-radius: inherit;
+	height: 400px;
+	object-fit: cover;
+	object-position: center;
+}

@@ -1,0 +1,24 @@
+.job_position {
+	display: grid;
+	place-items: center;
+	gap: 1em;
+	text-align: center;
+}
+.job_position h3 {
+	font-size: 24px;
+}
+.job_info {
+	color: #7f7f7f;
+	font-size: 14px;
+}
+@media (width < 375px) {
+	.job_position {
+		gap: 0.5em;
+	}
+	.job_position h3 {
+		font-size: 16px;
+	}
+	.job_info {
+		font-size: 10px;
+	}
+}

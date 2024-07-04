@@ -1,0 +1,65 @@
+.intro {
+	max-width: 700px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	place-items: center;
+	margin-top: 10em;
+	gap: 2.5em;
+	animation-name: ascend-fade;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+.intro h1 {
+	width: 100%;
+}
+.expertise {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	gap: 10px;
+}
+.project_display {
+	margin-top: 4em;
+	margin-bottom: 4em;
+	display: grid;
+	gap: 1.5em;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px;
+	z-index: 1;
+}
+.project_img {
+	border-radius: inherit;
+	height: 400px;
+	object-fit: cover;
+	object-position: center;
+}
+@media (width < 810px) {
+	.expertise {
+		display: none;
+	}
+	.project_display {
+		margin-bottom: 2em;
+		grid-template-columns: 1fr;
+	}
+	.project_img {
+		aspect-ratio: 3/2;
+		height: auto;
+	}
+}
+@media (width < 375px) {
+	.intro {
+		margin-top: 8em;
+	}
+}
+@keyframes ascend-fade {
+	from {
+		margin-top: 14em;
+		opacity: 0.3;
+	}
+	to {
+		margin-top: 10em;
+		opacity: 1;
+	}
+}

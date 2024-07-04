@@ -1,0 +1,98 @@
+.profile_heading {
+	margin-top: 4em;
+	margin-bottom: 2em;
+	animation-name: ascend;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+.project_display {
+	display: grid;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	gap: 1.5em;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px;
+	z-index: 1;
+}
+.profile_img {
+	border-radius: 10px;
+	height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+.about {
+	display: grid;
+	place-items: center;
+	max-width: 700px;
+	width: 90%;
+	margin: 5em auto;
+	text-align: center;
+	gap: 1em;
+}
+.about_content {
+	font-size: 38px;
+	font-family: "neue-montreal-medium", Arial, Helvetica, sans-serif;
+}
+.profile_intro {
+	display: grid;
+	place-items: center;
+	margin-top: 7em;
+	margin-bottom: 5em;
+	width: 100%;
+}
+.profile_intro h2 {
+	font-size: 38px;
+}
+.job_experiences {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-around;
+	gap: 2em;
+	padding: 1em;
+}
+.clients {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-bottom: 5em;
+}
+@keyframes ascend {
+	from {
+		margin-top: 5em;
+	}
+	to {
+		margin-top: 4em;
+	}
+}
+@media (width < 810px) {
+	.profile_img {
+		height: auto;
+		aspect-ratio: 1/1;
+	}
+	.project_display {
+		grid-template-columns: 1fr;
+		margin-bottom: 2em;
+	}
+	.profile_intro h2 {
+		font-size: 30px;
+	}
+	.job_experiences {
+		grid-template-columns: 1fr 1fr;
+	}
+	.clients {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.about_content {
+		font-size: 24px;
+	}
+}
+@media (width < 375px) {
+	.about_content {
+		font-size: 18px;
+	}
+	.job_experiences {
+		padding: 0.5em;
+	}
+	.profile_intro h2 {
+		font-size: 24px;
+	}
+}
